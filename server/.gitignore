@@ -1,0 +1,3 @@
+node_modules
+# локальные настройки: скопируйте .env.example в .env
+.env

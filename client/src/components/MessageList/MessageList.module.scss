@@ -1,0 +1,16 @@
+@use "../../styles/variables" as *;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.message {
+  width: $content-width;
+  padding: 15px;
+  border: 2px solid $accent-color;
+  border-radius: $radius;
+  background-color: white;
+  overflow-wrap: anywhere;
+}

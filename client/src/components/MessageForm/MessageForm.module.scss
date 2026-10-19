@@ -1,0 +1,42 @@
+@use "../../styles/variables" as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 40px;
+  width: $content-width;
+  border: 2px solid $accent-color;
+  border-radius: $radius;
+  background-color: white;
+}
+
+.input {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid $accent-color;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.button {
+  align-self: flex-end;
+  padding: 10px 15px;
+  border: 1px solid $accent-color;
+  background: none;
+  font-weight: bold;
+  color: $accent-color;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid $accent-color;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}

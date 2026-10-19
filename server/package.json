@@ -1,0 +1,29 @@
+{
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --watch ./index.ts",
+    "start:lp": "node --env-file-if-exists=.env --watch ./long-polling/server.ts",
+    "start:sse": "node --env-file-if-exists=.env --watch ./server-sent-events/server.ts",
+    "start:ws": "node --env-file-if-exists=.env --watch ./websocket/server.ts",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.19.2",
+    "@types/ws": "^8.18.2",
+    "typescript": "~6.0.3"
+  }
+}
